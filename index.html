@@ -86,7 +86,8 @@
         <div class="absolute inset-0 hero-overlay-refined"></div>
 
         <div class="container mx-auto px-4 md:px-8 relative z-10 text-white">
-            <h4 id="typing-tagline" class="text-gold font-bold tracking-widest mb-4 text-shadow-hero typewriter-cursor"></h4>
+            <h4 id="typing-tagline" class="text-gold font-bold tracking-widest mb-4 text-shadow-hero typewriter-cursor">
+            </h4>
             <h1 id="typing-title" class="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight text-shadow-hero">
             </h1>
             <div class="highlight-box mb-8 max-w-xl">
@@ -165,7 +166,9 @@
 
                     <div class="prose prose-slate prose-lg max-w-none">
                         <p class="text-slate-600 mb-6 leading-relaxed">
-                            <span class="text-2xl font-serif text-gold font-bold">N</span>allamilli Venkanna Babu, also
+                            <span class="text-2xl font-serif text-gold font-bold">N</span>allamilli <span
+                                class="text-2xl font-serif text-gold font-bold">V</span>enkanna <span
+                                class="text-2xl font-serif text-gold font-bold">B</span>abu, also
                             known as <span class="text-midnight font-bold">NVB</span>, S/o Nallamilli Appa Rao, hails
                             from <span class="italic">Rayadu Pakala</span> and was born on 17-01-1987. He is a seasoned
                             real estate professional with over <span class="text-midnight font-bold">20 years of
@@ -846,44 +849,27 @@
     <section id="contact-form" class="py-24 bg-midnight">
         <div class="container mx-auto px-4 md:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left: Heading & Info -->
+                <!-- Left: Form -->
                 <div data-aos="fade-right">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Let's Build Your <span class="text-gold">Dream House</span></h2>
-                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">Fill in the form and our team will connect with you instantly on WhatsApp. We respond within minutes!</p>
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-phone text-gold text-xl"></i></div>
-                            <a href="tel:+917998655655" class="text-white text-lg font-semibold hover:text-gold transition-all">+91 7998 655 655</a>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-envelope text-gold text-xl"></i></div>
-                            <a href="mailto:nvbdevelopers5@gmail.com" class="text-white text-lg font-semibold hover:text-gold transition-all">nvbdevelopers5@gmail.com</a>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i class="fa-solid fa-location-dot text-gold text-xl"></i></div>
-                            <p class="text-slate-300 text-lg">Seethampet, Rajamahendravaram</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Form -->
-                <div data-aos="fade-left">
                     <form id="homeContactForm" class="space-y-5 bg-white p-8 md:p-10 rounded-[2rem] shadow-2xl">
                         <div class="grid md:grid-cols-2 gap-5">
                             <div>
-                                <label for="hf-name" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-user mr-2 text-gold"></i>Full Name *</label>
+                                <label for="hf-name" class="block text-sm font-bold text-midnight mb-2"><i
+                                        class="fa-solid fa-user mr-2 text-gold"></i>Full Name *</label>
                                 <input type="text" id="hf-name" required placeholder="Your name"
                                     class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium">
                             </div>
                             <div>
-                                <label for="hf-phone" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-phone mr-2 text-gold"></i>Phone *</label>
+                                <label for="hf-phone" class="block text-sm font-bold text-midnight mb-2"><i
+                                        class="fa-solid fa-phone mr-2 text-gold"></i>Phone *</label>
                                 <input type="tel" id="hf-phone" required placeholder="Your phone"
                                     class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium">
                             </div>
                         </div>
 
                         <div>
-                            <label for="hf-service" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-list-check mr-2 text-gold"></i>Service Required *</label>
+                            <label for="hf-service" class="block text-sm font-bold text-midnight mb-2"><i
+                                    class="fa-solid fa-list-check mr-2 text-gold"></i>Service Required *</label>
                             <select id="hf-service" required
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium bg-white">
                                 <option value="" disabled selected>Select a service</option>
@@ -899,20 +885,24 @@
                         </div>
 
                         <div>
-                            <label for="hf-venture" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-building mr-2 text-gold"></i>Interested Venture</label>
+                            <label for="hf-venture" class="block text-sm font-bold text-midnight mb-2"><i
+                                    class="fa-solid fa-building mr-2 text-gold"></i>Interested Venture</label>
                             <select id="hf-venture"
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium bg-white">
                                 <option value="" selected>Select a venture (optional)</option>
                                 <option value="Rajanagaram Venture (Suncity)">Rajanagaram Venture (Suncity)</option>
                                 <option value="Madhurapudi Venture (Aerocity)">Madhurapudi Venture (Aerocity)</option>
                                 <option value="Morampudi Venture (Green City)">Morampudi Venture (Green City)</option>
-                                <option value="Gokavaram Venture (Lakshmi Avenues)">Gokavaram Venture (Lakshmi Avenues)</option>
-                                <option value="Kolamuru Venture (Godavari Township)">Kolamuru Venture (Godavari Township)</option>
+                                <option value="Gokavaram Venture (Lakshmi Avenues)">Gokavaram Venture (Lakshmi Avenues)
+                                </option>
+                                <option value="Kolamuru Venture (Godavari Township)">Kolamuru Venture (Godavari
+                                    Township)</option>
                             </select>
                         </div>
 
                         <div>
-                            <label for="hf-message" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-message mr-2 text-gold"></i>Message</label>
+                            <label for="hf-message" class="block text-sm font-bold text-midnight mb-2"><i
+                                    class="fa-solid fa-message mr-2 text-gold"></i>Message</label>
                             <textarea id="hf-message" rows="3" placeholder="Tell us about your requirements..."
                                 class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium resize-none"></textarea>
                         </div>
@@ -922,6 +912,34 @@
                             <i class="fa-brands fa-whatsapp text-2xl"></i> SEND ENQUIRY VIA WHATSAPP
                         </button>
                     </form>
+                </div>
+
+                <!-- Right: Heading & Info -->
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Let's Build Your <span
+                            class="text-gold">Dream House</span></h2>
+                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">Fill in the form and our team will connect
+                        with you instantly on WhatsApp. We respond within minutes!</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i
+                                    class="fa-solid fa-phone text-gold text-xl"></i></div>
+                            <a href="tel:+917998655655"
+                                class="text-white text-lg font-semibold hover:text-gold transition-all">+91 7998 655
+                                655</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i
+                                    class="fa-solid fa-envelope text-gold text-xl"></i></div>
+                            <a href="mailto:nvbdevelopers5@gmail.com"
+                                class="text-white text-lg font-semibold hover:text-gold transition-all">nvbdevelopers5@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center"><i
+                                    class="fa-solid fa-location-dot text-gold text-xl"></i></div>
+                            <p class="text-slate-300 text-lg">Seethampet, Rajamahendravaram</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1122,13 +1140,13 @@
         // Typewriter Effect Logic
         const tagline = "TRUSTED REAL ESTATE PARTNER";
         const titleText = "Find Your Dream Property with NVB Developers";
-        
+
         function typeWriter(elementId, text, speed, callback) {
             let i = 0;
             const element = document.getElementById(elementId);
-            if(!element) return;
+            if (!element) return;
             element.innerHTML = "";
-            
+
             function type() {
                 if (i < text.length) {
                     element.innerHTML += text.charAt(i);
@@ -1144,7 +1162,7 @@
         // Initialize typewriter on load
         window.addEventListener('DOMContentLoaded', () => {
             const hBox = document.querySelector(".highlight-box");
-            if(hBox) hBox.style.transform = "translateX(-30px)"; // Set initial state
+            if (hBox) hBox.style.transform = "translateX(-30px)"; // Set initial state
 
             // Start with tagline
             setTimeout(() => {
@@ -1152,20 +1170,20 @@
                     // Remove cursor from tagline, add to title
                     document.getElementById("typing-tagline").classList.remove("typewriter-cursor");
                     document.getElementById("typing-title").classList.add("typewriter-cursor");
-                    
+
                     // Start title
                     typeWriter("typing-title", titleText, 40, () => {
                         // Remove title cursor
                         document.getElementById("typing-title").classList.remove("typewriter-cursor");
-                        
+
                         // Wrap "NVB Developers" in the gold span
                         const titleEl = document.getElementById("typing-title");
                         const currentText = titleEl.innerHTML;
                         titleEl.innerHTML = currentText.replace("NVB Developers", '<span class="text-gold leading-none">NVB Developers</span>');
-                        
+
                         // Reveal the highlight box with the paragraph
                         setTimeout(() => {
-                            if(hBox) hBox.classList.add("revealed");
+                            if (hBox) hBox.classList.add("revealed");
                         }, 300);
                     });
                 });
@@ -1173,7 +1191,7 @@
         });
 
         // Home Page WhatsApp Contact Form Logic
-        document.getElementById('homeContactForm').addEventListener('submit', function(e) {
+        document.getElementById('homeContactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             const name = document.getElementById('hf-name').value.trim();
             const phone = document.getElementById('hf-phone').value.trim();
