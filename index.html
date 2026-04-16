@@ -89,7 +89,7 @@
             <h4 id="typing-tagline" class="text-gold font-bold tracking-widest mb-4 text-shadow-hero typewriter-cursor"></h4>
             <h1 id="typing-title" class="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight text-shadow-hero">
             </h1>
-            <div class="highlight-box mb-8 max-w-xl" data-aos="fade-up" data-aos-delay="800">
+            <div class="highlight-box mb-8 max-w-xl">
                 <p class="text-xl text-white text-shadow-hero opacity-90">
                     Premium solutions for plots, luxury villas, and independent homes. We build trust through quality
                     construction.
@@ -1143,6 +1143,9 @@
 
         // Initialize typewriter on load
         window.addEventListener('DOMContentLoaded', () => {
+            const hBox = document.querySelector(".highlight-box");
+            if(hBox) hBox.style.transform = "translateX(-30px)"; // Set initial state
+
             // Start with tagline
             setTimeout(() => {
                 typeWriter("typing-tagline", tagline, 50, () => {
@@ -1152,13 +1155,21 @@
                     
                     // Start title
                     typeWriter("typing-title", titleText, 40, () => {
-                        // After typing title, wrap "NVB Developers" in the gold span for highlighting
+                        // Remove title cursor
+                        document.getElementById("typing-title").classList.remove("typewriter-cursor");
+                        
+                        // Wrap "NVB Developers" in the gold span
                         const titleEl = document.getElementById("typing-title");
                         const currentText = titleEl.innerHTML;
                         titleEl.innerHTML = currentText.replace("NVB Developers", '<span class="text-gold leading-none animate-pulse">NVB Developers</span>');
+                        
+                        // Reveal the highlight box with the paragraph
+                        setTimeout(() => {
+                            if(hBox) hBox.classList.add("revealed");
+                        }, 300);
                     });
                 });
-            }, 500); // Slight initial delay
+            }, 500);
         });
 
         // Home Page WhatsApp Contact Form Logic
