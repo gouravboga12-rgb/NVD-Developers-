@@ -230,3 +230,31 @@ h1, h2, h3, .font-serif {
 .hero-overlay-refined {
     background: linear-gradient(90deg, rgba(2, 6, 23, 0.8) 0%, rgba(2, 6, 23, 0.4) 50%, rgba(2, 6, 23, 0) 100%);
 }
+
+/* Hero Animations */
+.highlight-box {
+    border-left: 4px solid var(--gold);
+    padding-left: 1.5rem;
+    background: rgba(184, 134, 11, 0.05);
+    backdrop-filter: blur(4px);
+    border-radius: 0 1rem 1rem 0;
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    0% { transform: translateX(-20px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.typewriter-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: var(--gold);
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+

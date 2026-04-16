@@ -86,15 +86,16 @@
         <div class="absolute inset-0 hero-overlay-refined"></div>
 
         <div class="container mx-auto px-4 md:px-8 relative z-10 text-white">
-            <h4 class="text-gold font-bold tracking-widest mb-4 text-shadow-hero" data-aos="fade-right">TRUSTED REAL ESTATE PARTNER</h4>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight text-shadow-hero" data-aos="fade-up"
+            <h4 id="typing-tagline" class="text-gold font-bold tracking-widest mb-4 text-shadow-hero typewriter-cursor" data-aos="fade-right"></h4>
+            <h1 id="typing-title" class="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight text-shadow-hero" data-aos="fade-up"
                 data-aos-delay="200">
-                Find Your Dream Property with <span class="text-gold leading-none">NVB Developers</span>
             </h1>
-            <p class="text-xl text-white mb-8 max-w-xl text-shadow-hero opacity-90" data-aos="fade-up" data-aos-delay="400">
-                Premium solutions for plots, luxury villas, and independent homes. We build trust through quality
-                construction.
-            </p>
+            <div class="highlight-box mb-8 max-w-xl" data-aos="fade-up" data-aos-delay="1000">
+                <p class="text-xl text-white text-shadow-hero opacity-90">
+                    Premium solutions for plots, luxury villas, and independent homes. We build trust through quality
+                    construction.
+                </p>
+            </div>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-up"
                 data-aos-delay="600">
                 <a href="https://wa.me/917998655655?text=Hello%20I%20am%20interested%20in%20your%20properties"
@@ -1117,6 +1118,48 @@
             if (e.target === videoModal) {
                 closeVideoModal();
             }
+        });
+
+        // Typewriter Effect Logic
+        const tagline = "TRUSTED REAL ESTATE PARTNER";
+        const titleText = "Find Your Dream Property with NVB Developers";
+        
+        function typeWriter(elementId, text, speed, callback) {
+            let i = 0;
+            const element = document.getElementById(elementId);
+            if(!element) return;
+            element.innerHTML = "";
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else if (callback) {
+                    callback();
+                }
+            }
+            type();
+        }
+
+        // Initialize typewriter on load
+        window.addEventListener('DOMContentLoaded', () => {
+            // Start with tagline
+            setTimeout(() => {
+                typeWriter("typing-tagline", tagline, 50, () => {
+                    // Remove cursor from tagline, add to title
+                    document.getElementById("typing-tagline").classList.remove("typewriter-cursor");
+                    document.getElementById("typing-title").classList.add("typewriter-cursor");
+                    
+                    // Start title
+                    typeWriter("typing-title", titleText, 40, () => {
+                        // After typing title, wrap "NVB Developers" in the gold span for highlighting
+                        const titleEl = document.getElementById("typing-title");
+                        const currentText = titleEl.innerHTML;
+                        titleEl.innerHTML = currentText.replace("NVB Developers", '<span class="text-gold leading-none animate-pulse">NVB Developers</span>');
+                    });
+                });
+            }, 500); // Slight initial delay
         });
 
         // Home Page WhatsApp Contact Form Logic
