@@ -221,3 +221,12 @@ h1, h2, h3, .font-serif {
     transform: scale(1.1);
     color: var(--gold);
 }
+
+/* Hero Section Enhancements */
+.text-shadow-hero {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay-refined {
+    background: linear-gradient(90deg, rgba(2, 6, 23, 0.8) 0%, rgba(2, 6, 23, 0.4) 50%, rgba(2, 6, 23, 0) 100%);
+}
