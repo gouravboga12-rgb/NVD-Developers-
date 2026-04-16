@@ -106,6 +106,75 @@
         </div>
     </section>
 
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-midnight mb-4">Send Us an Enquiry</h2>
+                    <div class="h-1.5 w-24 bg-gold mx-auto rounded-full"></div>
+                    <p class="mt-6 text-slate-500 text-lg">Fill in your details and we'll connect with you instantly on WhatsApp.</p>
+                </div>
+
+                <form id="contactForm" class="space-y-6 bg-slate-50 p-8 md:p-12 rounded-[2rem] shadow-xl border border-slate-100">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="cf-name" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-user mr-2 text-gold"></i>Full Name *</label>
+                            <input type="text" id="cf-name" required placeholder="Enter your full name"
+                                class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium">
+                        </div>
+                        <div>
+                            <label for="cf-phone" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-phone mr-2 text-gold"></i>Phone Number *</label>
+                            <input type="tel" id="cf-phone" required placeholder="Enter your phone number"
+                                class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="cf-service" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-list-check mr-2 text-gold"></i>Service Required *</label>
+                        <select id="cf-service" required
+                            class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium bg-white">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Plot Purchase">Plot Purchase</option>
+                            <option value="Independent House Construction">Independent House Construction</option>
+                            <option value="Villa Construction">Villa Construction</option>
+                            <option value="Real Estate Investment Advisory">Real Estate Investment Advisory</option>
+                            <option value="Resort Booking (SSV Resorts)">Resort Booking (SSV Resorts)</option>
+                            <option value="Legal & Documentation Support">Legal & Documentation Support</option>
+                            <option value="Site Visit Request">Site Visit Request</option>
+                            <option value="Other Enquiry">Other Enquiry</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="cf-venture" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-building mr-2 text-gold"></i>Interested Venture</label>
+                        <select id="cf-venture"
+                            class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium bg-white">
+                            <option value="" selected>Select a venture (optional)</option>
+                            <option value="Rajanagaram Venture (Suncity)">Rajanagaram Venture (Suncity)</option>
+                            <option value="Madhurapudi Venture (Aerocity)">Madhurapudi Venture (Aerocity)</option>
+                            <option value="Morampudi Venture (Green City)">Morampudi Venture (Green City)</option>
+                            <option value="Gokavaram Venture (Lakshmi Avenues)">Gokavaram Venture (Lakshmi Avenues)</option>
+                            <option value="Kolamuru Venture (Godavari Township)">Kolamuru Venture (Godavari Township)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="cf-message" class="block text-sm font-bold text-midnight mb-2"><i class="fa-solid fa-message mr-2 text-gold"></i>Your Message</label>
+                        <textarea id="cf-message" rows="4" placeholder="Tell us more about your requirements..."
+                            class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-midnight font-medium resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition-all shadow-xl flex items-center justify-center text-lg gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> SEND ENQUIRY VIA WHATSAPP
+                    </button>
+                    <p class="text-center text-xs text-slate-400 mt-2">Your details will be sent directly to our WhatsApp for a quick response.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Map & Address Section -->
     <section class="py-20">
         <div class="container mx-auto px-4">
@@ -243,6 +312,29 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
             });
+        });
+
+        // WhatsApp Contact Form Logic
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('cf-name').value.trim();
+            const phone = document.getElementById('cf-phone').value.trim();
+            const service = document.getElementById('cf-service').value;
+            const venture = document.getElementById('cf-venture').value;
+            const message = document.getElementById('cf-message').value.trim();
+
+            let waMessage = `Hello NVB Developers!%0A%0A`;
+            waMessage += `*Name:* ${encodeURIComponent(name)}%0A`;
+            waMessage += `*Phone:* ${encodeURIComponent(phone)}%0A`;
+            waMessage += `*Service Required:* ${encodeURIComponent(service)}%0A`;
+            if (venture) {
+                waMessage += `*Interested Venture:* ${encodeURIComponent(venture)}%0A`;
+            }
+            if (message) {
+                waMessage += `%0A*Message:* ${encodeURIComponent(message)}`;
+            }
+
+            window.open(`https://wa.me/917998655655?text=${waMessage}`, '_blank');
         });
     </script>
 </body>
