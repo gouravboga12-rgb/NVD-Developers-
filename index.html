@@ -29,7 +29,7 @@
 <body class="bg-slate-50">
 
     <!-- Sticky Navbar -->
-    <nav class="sticky top-0 z-50 glass nav-shadow py-2">
+    <nav class="fixed top-0 left-0 w-full z-50 glass nav-shadow py-2">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
             <!-- Logo -->
             <a href="index.html" class="flex items-center space-x-3">
@@ -83,7 +83,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[95vh] py-20 flex items-center overflow-hidden">
+    <section id="hero" class="relative min-h-[90vh] flex items-center pt-24 lg:pt-0 header-spacer">
         <!-- Image Fallback -->
         <img src="assets/images/hero_real_estate.png" class="absolute inset-0 w-full h-full object-cover"
             alt="Hero Background">
@@ -457,10 +457,10 @@
                         </div>
                     </div>
                     <div class="p-8">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-2xl font-bold text-midnight">RAJANAGARAM VENTURE</h3>
+                        <div class="flex flex-col sm:flex-row justify-between items-start mb-2 gap-2">
+                            <h3 class="text-2xl font-bold text-midnight leading-tight">RAJANAGARAM VENTURE</h3>
                             <span
-                                class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">SUNCITY</span>
+                                class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">SUNCITY</span>
                         </div>
                         <p class="text-emerald-600 font-bold text-sm mb-4">RUDA APPROVED</p>
                         <div
@@ -780,7 +780,7 @@
                     ensuring excellence in every square foot.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Reason 1 -->
                 <div class="p-10 bg-slate-50 rounded-3xl shadow-xl hover:shadow-gold/10 transition-all group"
                     data-aos="fade-up">
@@ -987,7 +987,7 @@
     <!-- Footer -->
     <footer class="bg-midnight pt-20 pb-10 text-slate-400">
         <div class="container mx-auto px-4 md:px-8">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 <!-- Branding -->
                 <div class="col-span-2 lg:col-span-1">
                     <img src="assets/images/nvb logo.jpg.jpeg" alt="NVB Logo" class="h-16 mb-6 rounded">
@@ -1057,8 +1057,8 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/917998655655?text=Hello%20I%20am%20interested%20in%20your%20properties" target="_blank"
-        class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[70] bg-green-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-2xl sm:text-3xl shadow-2xl wa-pulse hover:scale-110 transition-transform">
+    <a href="https://wa.me/917993643333?text=Hello%20SSV%20Resorts,%20I%20would%20like%20to%20enquire%20about%20a%20booking." target="_blank"
+        class="fixed bottom-10 right-6 sm:bottom-8 sm:right-8 z-[70] bg-green-500 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-2xl sm:text-3xl shadow-2xl wa-pulse hover:scale-110 transition-transform">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 

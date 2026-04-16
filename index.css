@@ -274,11 +274,14 @@ h1, h2, h3, .font-serif {
     .text-8xl { font-size: 3.75rem !important; line-height: 1; }
     .text-4xl { font-size: 1.875rem !important; }
     
-    section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
-    .py-32 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
-    .py-24 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+    section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+    .py-32 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+    .py-24 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
     
     .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+    
+    /* Ensure fixed header doesn't cover top content on mobile */
+    .header-spacer { padding-top: 72px !important; }
 }
 
 /* Stricter overflow prevention for mobile */
