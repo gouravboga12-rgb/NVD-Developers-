@@ -1,0 +1,223 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary: #B8860B; /* Deep Gold */
+    --primary-dark: #8B6508;
+    --secondary: #0F172A; /* Midnight Blue/Obsidian */
+    --accent: #C5A059; /* Light Gold */
+    --light: #F8FAFC;
+    --dark: #020617;
+    --gold: #B8860B;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--light);
+    color: var(--secondary);
+}
+
+h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-gold { background-color: var(--primary); }
+.text-gold { color: var(--primary); }
+.border-gold { border-color: var(--primary); }
+.hover-gold:hover { background-color: var(--primary-dark); }
+
+.bg-midnight { background-color: var(--secondary); }
+.text-midnight { color: var(--secondary); }
+.hover-midnight:hover { background-color: var(--dark); }
+
+.bg-emerald-green { background-color: var(--primary); } /* Alias for compatibility */
+.text-emerald-green { color: var(--primary); } /* Alias for compatibility */
+.border-emerald-green { border-color: var(--primary); } /* Alias for compatibility */
+
+.bg-navy-blue { background-color: var(--secondary); } /* Alias for compatibility */
+.text-navy-blue { color: var(--secondary); } /* Alias for compatibility */
+
+.text-gold-light { color: var(--accent); }
+.bg-gold-light { background-color: var(--accent); }
+
+.bg-crimson-red { background-color: var(--accent); }
+.text-crimson-red { color: var(--accent); }
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Transitions */
+.transition-slow { transition: all 0.5s ease; }
+
+/* Sticky Navbar Shadow */
+.nav-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* Specific Card Rules */
+.property-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Pulsing effect for WhatsApp */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.wa-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Navigation Overlays */
+#mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Swiper Custom Styles */
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.swiper-slide img, .swiper-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.7 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--gold) !important;
+    opacity: 1 !important;
+}
+
+/* Swiper Navigation Arrows */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+    background: rgba(184, 134, 11, 0.5); /* Semi-transparent Gold */
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: rgba(184, 134, 11, 0.9);
+    transform: scale(1.1);
+}
+
+.property-card:hover .swiper-button-next, 
+.property-card:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    opacity: 0.7; /* visible by default */
+}
+
+@media (max-width: 1024px) {
+    .swiper-button-next, .swiper-button-prev {
+        opacity: 1 !important;
+        background: rgba(184, 134, 11, 0.8) !important;
+    }
+}
+
+/* Modal System */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.9);
+    z-index: 1000;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1010;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.modal-close:hover {
+    transform: scale(1.1);
+    color: var(--gold);
+}

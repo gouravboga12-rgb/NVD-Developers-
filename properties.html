@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Properties | NVB Developers - Premium Real Estate Ventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 glass nav-shadow py-2">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="assets/images/nvb logo.jpg.jpeg" alt="NVB Developers Logo" class="h-14 w-auto rounded">
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold text-midnight leading-none">NVB DEVELOPERS</span>
+                    <span class="text-[10px] tracking-widest text-gold font-semibold">QUALITY & TRUST</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-8 items-center">
+                <a href="index.html" class="text-slate-600 font-medium hover:text-gold transition-colors">Home</a>
+                <a href="about.html" class="text-slate-600 font-medium hover:text-gold transition-colors">About</a>
+                <a href="services.html"
+                    class="text-slate-600 font-medium hover:text-gold transition-colors">Services</a>
+                <a href="properties.html"
+                    class="text-midnight font-bold hover:text-gold transition-colors">Properties</a>
+                <a href="resort.html" class="text-slate-600 font-medium hover:text-gold transition-colors">Resort</a>
+                <a href="why-us.html" class="text-slate-600 font-medium hover:text-gold transition-colors">Why Us</a>
+                <a href="contact.html"
+                    class="bg-gold text-white px-6 py-2 rounded-full font-semibold hover:bg-emerald-700 transition-all flex items-center shadow-lg">
+                    Contact <i class="fa-brands fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="menu-btn" class="lg:hidden text-midnight text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-midnight text-white flex flex-col p-8 space-y-6 lg:hidden">
+        <div class="flex justify-between items-center bg-white/10 p-4 rounded-xl">
+            <span class="font-bold">MENU</span>
+            <button id="close-menu" class="text-2xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <a href="index.html" class="text-2xl font-semibold border-b border-white/10 pb-2">Home</a>
+        <a href="about.html" class="text-2xl font-semibold border-b border-white/10 pb-2">About</a>
+        <a href="services.html" class="text-2xl font-semibold border-b border-white/10 pb-2">Services</a>
+        <a href="properties.html" class="text-2xl font-semibold border-b border-white/10 pb-2 text-gold">Properties</a>
+        <a href="resort.html" class="text-2xl font-semibold border-b border-white/10 pb-2">Resort</a>
+        <a href="why-us.html" class="text-2xl font-semibold border-b border-white/10 pb-2">Why Us</a>
+        <a href="contact.html" class="text-2xl font-semibold text-gold">Contact on WhatsApp</a>
+    </div>
+
+    <!-- Header -->
+    <section class="bg-midnight py-16 text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Explore Our Ventures</h1>
+        <p class="text-slate-400 max-w-xl mx-auto" data-aos="fade-up">A curated list of ongoing and completed projects
+            built on trust and delivered with perfection.</p>
+    </section>
+
+    <!-- Properties Layout -->
+    <main class="container mx-auto px-4 py-20">
+        <div class="property-grid">
+
+            <!-- 1. RAJANAGARAM VENTURE -->
+            <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
+                data-aos="fade-up">
+                <div class="relative group">
+                    <div class="swiper property-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-image-overlay">
+                                <img src="assets/images/rajanagaram_concept.png" alt="Rajanagaram Concept"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/RV.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/RV2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/R1.jpeg" alt="Rajanagaram 1"></div>
+                            <div class="swiper-slide"><img src="assets/images/R2.jpeg" alt="Rajanagaram 2"></div>
+                            <div class="swiper-slide"><img src="assets/images/R3.jpeg" alt="Rajanagaram 3"></div>
+                            <div class="swiper-slide"><img src="assets/images/R4.jpeg" alt="Rajanagaram 4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 z-10 bg-gold text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">
+                        Active | 3.84 Acres
+                    </div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-midnight">RAJANAGARAM VENTURE</h2>
+                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">SUNCITY</span>
+                    </div>
+                    <p class="text-emerald-600 font-bold text-sm mb-4">RUDA APPROVED</p>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">A thoughtfully planned large-scale project
+                        designed for modern living and long-term value. Premium residential plots with all luxury
+                        amenities.</p>
+
+                    <div
+                        class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
+                        <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
+                        <span><i class="fa-solid fa-droplet mr-2 text-gold"></i> CC DRAINS</span>
+                        <span><i class="fa-solid fa-bolt mr-2 text-gold"></i> 3PH CURRENT</span>
+                        <span><i class="fa-solid fa-faucet-drip mr-2 text-gold"></i> WATER SUPPLY</span>
+                        <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="openModal('rv-plan')"
+                                class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-map mr-2"></i> SITE PLAN
+                            </button>
+                            <a href="assets/docs/rajanagaram_brochure.pdf" download
+                                class="bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-file-pdf mr-2"></i> BROCHURE
+                            </a>
+                        </div>
+                        <a href="https://www.google.com/maps?q=17.087778,81.909333" target="_blank"
+                            class="w-full bg-slate-100 text-midnight text-center py-3 rounded-xl font-bold hover:bg-slate-200 transition-all flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
+                        </a>
+                        <a href="https://wa.me/917998655655?text=Hello,%20I%20am%20interested%20in%20Rajanagaram%20Venture"
+                            class="w-full bg-transparent text-gold border-2 border-gold text-center py-3 rounded-xl font-bold hover:bg-gold hover:text-white transition-all">
+                            ENQUIRE ON WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. AEROCITY -->
+            <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
+                data-aos="fade-up" data-aos-delay="100">
+                <div class="relative group">
+                    <div class="swiper property-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-image-overlay">
+                                <img src="assets/images/aerocity_concept.png" alt="Aerocity Concept"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/AV1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/AV2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/A1.jpeg" alt="Aerocity 1"></div>
+                            <div class="swiper-slide"><img src="assets/images/A2.jpeg" alt="Aerocity 2"></div>
+                            <div class="swiper-slide"><img src="assets/images/A3.jpeg" alt="Aerocity 3"></div>
+                            <div class="swiper-slide"><img src="assets/images/A4.jpeg" alt="Aerocity 4"></div>
+                            <div class="swiper-slide"><img src="assets/images/A5.jpeg" alt="Aerocity 5"></div>
+                            <div class="swiper-slide"><img src="assets/images/A6.jpeg" alt="Aerocity 6"></div>
+                            <div class="swiper-slide"><img src="assets/images/A7.jpeg" alt="Aerocity 7"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 z-10 bg-crimson-red text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+                        Active | 11 Acres
+                    </div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-midnight">MADHURAPUDI VENTURE</h2>
+                        <span
+                            class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">AEROCITY</span>
+                    </div>
+                    <p class="text-emerald-600 font-bold text-sm mb-4 uppercase tracking-wider">Opp. Airport,
+                        Rajahmundry</p>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Experience living close to the sky.
+                        Madhurapudi Venture (Aerocity) offers a lifestyle of prestige and convenience, perfectly
+                        situated near the heart of transportation hubs.</p>
+
+                    <div
+                        class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
+                        <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
+                        <span><i class="fa-solid fa-droplet mr-2 text-gold"></i> CC DRAINS</span>
+                        <span><i class="fa-solid fa-bolt mr-2 text-gold"></i> 3PH CURRENT</span>
+                        <span><i class="fa-solid fa-faucet-drip mr-2 text-gold"></i> WATER SUPPLY</span>
+                        <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <a href="assets/docs/airport_brochure.pdf" download
+                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
+                            <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
+                        </a>
+                        <a href="https://www.google.com/maps?q=17.094167,81.827306" target="_blank"
+                            class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
+                        </a>
+                        <a href="https://wa.me/917998655655?text=Hello,%20I%20am%20interested%20in%20Madhurapudi%20Venture%20(Aerocity)"
+                            class="w-full border-2 border-gold text-gold text-center py-3 rounded-xl font-bold hover:bg-gold hover:text-white transition-all">
+                            ENQUIRE ON WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. MORAMPUDI VENTURE -->
+            <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
+                data-aos="fade-up" data-aos-delay="200">
+                <div class="relative group">
+                    <div class="swiper property-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-image-overlay">
+                                <img src="assets/images/morampudi_plots.png" alt="Morampudi Open Plots"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/MV1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/MV2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/M1.jpeg" alt="Morampudi 1"></div>
+                            <div class="swiper-slide"><img src="assets/images/M2.jpeg" alt="Morampudi 2"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 z-10 bg-gold text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+                        9-12 Acres Project
+                    </div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-midnight leading-tight">MORAMPUDI VENTURE</h2>
+                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">GREEN
+                            CITY</span>
+                    </div>
+                    <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">RUDA Approved Development</p>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Sprawling 9-12 Acre Development designed for
+                        peace, privacy, and future-forward urban living. Experience nature in the city.</p>
+
+                    <div
+                        class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
+                        <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
+                        <span><i class="fa-solid fa-droplet mr-2 text-gold"></i> CC DRAINS</span>
+                        <span><i class="fa-solid fa-bolt mr-2 text-gold"></i> 3PH CURRENT</span>
+                        <span><i class="fa-solid fa-faucet-drip mr-2 text-gold"></i> WATER SUPPLY</span>
+                        <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <a href="assets/docs/morampudi_brochure.pdf" download
+                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
+                            <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
+                        </a>
+                        <a href="https://www.google.com/maps?q=16.991444,81.840972" target="_blank"
+                            class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
+                        </a>
+                        <a href="https://wa.me/917998655655?text=Hello,%20I%20am%20interested%20in%20Morampudi%20Venture"
+                            class="w-full border-2 border-gold text-gold text-center py-3 rounded-xl font-bold hover:bg-gold hover:text-white transition-all">
+                            ENQUIRE ON WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. GOKAVARAM VENTURE -->
+            <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
+                data-aos="fade-up" data-aos-delay="300">
+                <div class="relative group">
+                    <div class="swiper property-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-image-overlay">
+                                <img src="assets/images/gokavaram_concept.png" alt="Gokavaram Concept"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/GV1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/GV2.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/G1.jpeg" alt="Gokavaram Site 1"
+                                    class="w-full h-full object-cover"></div>
+                            <div class="swiper-slide"><img src="assets/images/G2.jpeg" alt="Gokavaram Site 2"
+                                    class="w-full h-full object-cover"></div>
+                            <div class="swiper-slide"><img src="assets/images/G3.jpeg" alt="Gokavaram Site 3"
+                                    class="w-full h-full object-cover"></div>
+                            <div class="swiper-slide"><img src="assets/images/G4.jpeg" alt="Gokavaram Site 4"
+                                    class="w-full h-full object-cover"></div>
+                            <div class="swiper-slide"><img src="assets/images/G5.jpeg" alt="Gokavaram Site 5"
+                                    class="w-full h-full object-cover"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 z-10 bg-midnight text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+                        New Project
+                    </div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-midnight leading-tight">GOKAVARAM VENTURE</h2>
+                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">LAKSHMI
+                            AVENUES</span>
+                    </div>
+                    <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">DTCP APPROVED</p>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Our newest venture at Gokavaram. A project
+                        defined by modern infrastructure and high-quality construction standards. Bank loan facilities
+                        available.</p>
+
+                    <div
+                        class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
+                        <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
+                        <span><i class="fa-solid fa-droplet mr-2 text-gold"></i> CC DRAINS</span>
+                        <span><i class="fa-solid fa-bolt mr-2 text-gold"></i> 3PH CURRENT</span>
+                        <span><i class="fa-solid fa-faucet-drip mr-2 text-gold"></i> WATER SUPPLY</span>
+                        <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <a href="assets/docs/gokavaram_brochure.pdf" download
+                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
+                            <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
+                        </a>
+                        <a href="https://maps.app.goo.gl/rPwfJrXNJz5zmyQ79" target="_blank"
+                            class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center text-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
+                        </a>
+                        <a href="https://wa.me/917998655655?text=Hello,%20I%20am%20interested%20in%20Gokavaram%20Venture"
+                            class="w-full border-2 border-gold text-gold text-center py-3 rounded-xl font-bold hover:bg-gold hover:text-white transition-all shadow-lg">
+                            ENQUIRE ON WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completed Projects Section -->
+        <div class="mt-20 mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-midnight flex items-center">
+                <i class="fa-solid fa-circle-check text-gold mr-4"></i> COMPLETED PROJECTS
+            </h2>
+            <div class="h-1 w-20 bg-gold mt-2"></div>
+        </div>
+
+        <div class="property-grid">
+            <!-- 5. KOLAMURU VENTURE -->
+            <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
+                data-aos="fade-up">
+                <div class="relative group">
+                    <div class="swiper property-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/images/K1.jpeg" alt="Kolamuru 1"></div>
+                            <div class="swiper-slide">
+                                <video loop playsinline controls disablePictureInPicture class="carousel-video">
+                                    <source src="assets/videos/KV1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="swiper-slide"><img src="assets/images/K2.jpeg" alt="Kolamuru 2"></div>
+                            <div class="swiper-slide"><img src="assets/images/K3.jpeg" alt="Kolamuru 3"></div>
+                            <div class="swiper-slide"><img src="assets/images/K4.jpeg" alt="Kolamuru 4"></div>
+                            <div class="swiper-slide"><img src="assets/images/K5.jpeg" alt="Kolamuru 5"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div
+                        class="absolute top-4 left-4 z-10 bg-slate-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+                        Completed | 100 Acres
+                    </div>
+                </div>
+                <div class="p-8 flex-grow">
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="text-2xl font-bold text-midnight leading-tight">KOLAMURU VENTURE</h2>
+                        <span
+                            class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded text-center">GODAVARI
+                            TOWNSHIP</span>
+                    </div>
+                    <p class="text-emerald-600 font-bold text-sm mb-2">PHASE-I, II, III (RUDA APPROVED)</p>
+                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">A sprawling 100-Acre premium development.
+                        This landmark project set the standard for modern living in Rajahmundry with complete
+                        infrastructure and long-term value.</p>
+
+                    <div
+                        class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
+                        <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
+                        <span><i class="fa-solid fa-droplet mr-2 text-gold"></i> CC DRAINS</span>
+                        <span><i class="fa-solid fa-bolt mr-2 text-gold"></i> 3PH CURRENT</span>
+                        <span><i class="fa-solid fa-faucet-drip mr-2 text-gold"></i> WATER SUPPLY</span>
+                        <span><i class="fa-solid fa-tree mr-2 text-gold"></i> CHILDRENS PARK</span>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <a href="https://wa.me/917998655655?text=Hello,%20I%20am%20interested%20in%20your%20completed%20projects%20like%20Kolamuru"
+                            class="w-full bg-midnight text-white text-center py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-lg">
+                            ENQUIRE FOR RESALE / INFO
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals Section -->
+
+    <!-- 1. Rajanagaram Site Plan (Embed PDF) -->
+    <div id="rv-plan" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>RAJANAGARAM VENTURE SITE PLAN</span>
+                <a href="assets/docs/RAJANAGARAM NEW  PLAN (1).pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="assets/docs/RAJANAGARAM NEW  PLAN (1).pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-midnight pt-20 pb-10 text-slate-400">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="col-span-2 lg:col-span-1">
+                    <img src="assets/images/nvb logo.jpg.jpeg" alt="NVB Logo" class="h-16 mb-6 rounded">
+                    <h3 class="text-white font-bold text-2xl mb-4">NVB Developers</h3>
+                    <p class="mb-6 leading-relaxed">The leading name in Rajamahendravaram real estate. Quality
+                        construction, transparent dealings, and prime property locations.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/share/18Lvtstjk5/" target="_blank"
+                            class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-gold hover:text-white transition-all"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-gold hover:text-white transition-all"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-gold hover:text-white transition-all"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="hover:text-gold transition-all">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold transition-all">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-gold transition-all">Our Services</a></li>
+                        <li><a href="properties.html" class="hover:text-gold transition-all">Our Ventures</a></li>
+                        <li><a href="resort.html" class="hover:text-gold transition-all">Signature Resort</a></li>
+                        <li><a href="contact.html" class="hover:text-gold transition-all">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Our Services</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li>Plot Sales</li>
+                        <li>Independent House Construction</li>
+                        <li>Villas Construction</li>
+                        <li>Real Estate Investment Advisory</li>
+                        <li>Legal & Technical Documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Contact Us</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold"></i>
+                            <span>Seethampet, Rajamahendravaram,<br>Andhra Pradesh 533104</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-4 text-gold"></i>
+                            <a href="tel:+917998655655" class="hover:text-gold">+91 7998 655 655</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-4 text-gold"></i>
+                            <a href="mailto:nvbdevelopers5@gmail.com"
+                                class="hover:text-gold">nvbdevelopers5@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-10 text-center text-sm">
+                <p>&copy; 2026 NVB Developers. All rights reserved. Designed for Quality & Trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917998655655?text=Hello%20I%20am%20interested%20in%20your%20properties" target="_blank"
+        class="fixed bottom-8 right-8 z-[70] bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl wa-pulse hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        // Initialize Swipers
+        const swipers = new Swiper('.property-swiper', {
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChange: function () {
+                    // Pause all videos
+                    document.querySelectorAll('.carousel-video').forEach(video => {
+                        video.pause();
+                    });
+
+                    // Auto play video in active slide
+                    const activeSlide = this.slides[this.activeIndex];
+                    const activeVideo = activeSlide.querySelector('video');
+                    if (activeVideo) {
+                        activeVideo.play().catch(e => {
+                            console.log('Autoplay prevented by browser', e);
+                        });
+                    }
+                }
+            }
+        });
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closeModals() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.classList.remove('active');
+            });
+        }
+
+        // Close modal on click outside content
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModals();
+            }
+        }
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
