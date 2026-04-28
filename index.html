@@ -122,8 +122,8 @@
         <div class="container mx-auto px-4 md:px-8">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
                 <div class="text-center p-2" data-aos="zoom-in">
-                    <p class="text-3xl sm:text-4xl font-bold text-midnight"><span class="counter" data-target="5">0</span>+</p>
-                    <p class="text-slate-500 font-semibold uppercase text-[10px] sm:text-xs tracking-wider">Active Ventures</p>
+                    <p class="text-3xl sm:text-4xl font-bold text-midnight"><span class="counter" data-target="25">0</span>+</p>
+                    <p class="text-slate-500 font-semibold uppercase text-[10px] sm:text-xs tracking-wider">Projects Delivered</p>
                 </div>
                 <div class="text-center p-2" data-aos="zoom-in" data-aos-delay="100">
                     <p class="text-3xl sm:text-4xl font-bold text-midnight"><span class="counter" data-target="10000">0</span>+</p>
@@ -417,7 +417,7 @@
                     projects built on trust and delivered with perfection.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 <!-- 1. RAJANAGARAM VENTURE -->
                 <div class="property-card bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-slate-100"
                     data-aos="fade-up">
@@ -464,7 +464,24 @@
                             <span
                                 class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">SUNCITY</span>
                         </div>
-                        <p class="text-emerald-600 font-bold text-sm mb-4">RUDA APPROVED</p>
+                        <p class="text-emerald-600 font-bold text-sm mb-2">RUDA APPROVED</p>
+                        <p class="text-slate-600 text-xs mb-2 leading-relaxed">A thoughtfully planned large-scale project designed for modern living and long-term value.</p>
+                        
+                        <!-- Independent View More Highlights -->
+                        <div class="mb-4">
+                            <button onclick="toggleHighlights(this)" class="view-more-btn !py-1">
+                                VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                            </button>
+                            <div class="highlights-content mt-2">
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Gsl medical College and hospital - 3km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Giet - 6km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Lenora dental college - 2kms</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Adikavi nannaya University - 5.5Km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Royal convention hall - 1km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Highway NH16 - 50 METERS</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> BUS STAND under 1km</div>
+                            </div>
+                        </div>
                         <div
                             class="grid grid-cols-2 gap-y-3 mb-6 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
                             <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
@@ -548,7 +565,22 @@
                             <span
                                 class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">AEROCITY</span>
                         </div>
-                        <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">OPP. AIRPORT</p>
+                        <p class="text-emerald-600 font-bold text-sm mb-2 uppercase">OPP. AIRPORT</p>
+                        <p class="text-slate-600 text-xs mb-2 leading-relaxed">Experience living close to the sky. Madhurapudi Venture (Aerocity) offers a lifestyle of prestige.</p>
+
+                        <!-- Independent View More Highlights -->
+                        <div class="mb-4">
+                            <button onclick="toggleHighlights(this)" class="view-more-btn !py-1">
+                                VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                            </button>
+                            <div class="highlights-content mt-2">
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Rajahmundry - Bhadrachalam highway - 100 MTRS</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Rajahmundry Airport - 500 MTRS</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Laurel Global High School - 2.5Kms</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Kesava medical emergency - 4kms</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Sasi engineering collage - 2 kms</div>
+                            </div>
+                        </div>
                         <div
                             class="grid grid-cols-2 gap-y-3 mb-6 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
                             <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
@@ -622,7 +654,23 @@
                             <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">GREEN
                                 CITY</span>
                         </div>
-                        <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">RUDA APPROVED</p>
+                        <p class="text-emerald-600 font-bold text-sm mb-2 uppercase">RUDA APPROVED</p>
+                        <p class="text-slate-600 text-xs mb-2 leading-relaxed">Sprawling 9-12 Acre Development designed for peace, privacy, and future-forward urban living.</p>
+
+                        <!-- Independent View More Highlights -->
+                        <div class="mb-4">
+                            <button onclick="toggleHighlights(this)" class="view-more-btn !py-1">
+                                VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                            </button>
+                            <div class="highlights-content mt-2">
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Morampudi main junction - 3.5kms</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Trips international school - 1.5kms</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Aditya Thaksh school - 1km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Delta emergency hospital - 5km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> ONGC base complex - 5km</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> RTC complex - 5km</div>
+                            </div>
+                        </div>
                         <div
                             class="grid grid-cols-2 gap-y-3 mb-6 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
                             <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
@@ -702,7 +750,19 @@
                             <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded">LAKSHMI
                                 AVENUES</span>
                         </div>
-                        <p class="text-emerald-600 font-bold text-sm mb-4 uppercase tracking-wider">DTCP APPROVED</p>
+                        <p class="text-emerald-600 font-bold text-sm mb-2 uppercase tracking-wider">DTCP APPROVED</p>
+                        <p class="text-slate-600 text-xs mb-2 leading-relaxed">Our newest venture at Gokavaram defined by modern infrastructure and high-quality standards.</p>
+
+                        <!-- Independent View More Highlights -->
+                        <div class="mb-4">
+                            <button onclick="toggleHighlights(this)" class="view-more-btn !py-1">
+                                VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                            </button>
+                            <div class="highlights-content mt-2">
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Near to National Highway</div>
+                                <div class="highlight-item !text-[11px] !mb-1"><i class="fa-solid fa-circle-check"></i> Located in the Mandal head quarters</div>
+                            </div>
+                        </div>
                         <div
                             class="grid grid-cols-2 gap-y-3 mb-6 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
                             <span><i class="fa-solid fa-road mr-2 text-gold"></i> CC ROADS</span>
@@ -1212,6 +1272,39 @@
                 }
             }
         });
+
+        // Property Highlights Toggle (Accordion Style)
+        function toggleHighlights(btn) {
+            const currentContent = btn.nextElementSibling;
+            const isExpanding = !currentContent.classList.contains('expanded');
+            
+            // Close other expanded highlights
+            if (isExpanding) {
+                document.querySelectorAll('.highlights-content.expanded').forEach(content => {
+                    if (content !== currentContent) {
+                        content.classList.remove('expanded');
+                        const otherBtn = content.previousElementSibling;
+                        if (otherBtn && otherBtn.classList.contains('view-more-btn')) {
+                            otherBtn.innerHTML = `VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                            otherBtn.querySelector('i').style.transform = 'rotate(0deg)';
+                            otherBtn.classList.remove('active');
+                        }
+                    }
+                });
+            }
+
+            // Toggle current
+            currentContent.classList.toggle('expanded');
+            btn.classList.toggle('active');
+            
+            if (currentContent.classList.contains('expanded')) {
+                btn.innerHTML = `VIEW LESS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                btn.querySelector('i').style.transform = 'rotate(180deg)';
+            } else {
+                btn.innerHTML = `VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                btn.querySelector('i').style.transform = 'rotate(0deg)';
+            }
+        }
 
         // Mobile Menu Logic
         const menuBtn = document.getElementById('menu-btn');

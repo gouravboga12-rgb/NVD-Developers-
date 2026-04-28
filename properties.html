@@ -18,7 +18,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2rem;
+            align-items: start;
         }
+
         @media (max-width: 350px) {
             .property-grid {
                 grid-template-columns: 1fr;
@@ -71,13 +73,20 @@
             <button id="close-menu" class="text-3xl text-gold"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="flex flex-col space-y-6">
-            <a href="index.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Home</a>
-            <a href="about.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">About Us</a>
-            <a href="services.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Services</a>
-            <a href="properties.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors text-gold">Properties</a>
-            <a href="resort.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">SSV Resort</a>
-            <a href="why-us.html" class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Why Us</a>
-            <a href="contact.html" class="mt-4 bg-gold text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-gold/20 flex items-center justify-center">
+            <a href="index.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Home</a>
+            <a href="about.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">About Us</a>
+            <a href="services.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Services</a>
+            <a href="properties.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors text-gold">Properties</a>
+            <a href="resort.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">SSV Resort</a>
+            <a href="why-us.html"
+                class="text-2xl font-bold border-b border-white/5 pb-4 hover:text-gold transition-colors">Why Us</a>
+            <a href="contact.html"
+                class="mt-4 bg-gold text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-gold/20 flex items-center justify-center">
                 <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> CONTACT ON WHATSAPP
             </a>
         </div>
@@ -131,12 +140,29 @@
                 <div class="p-8 flex-grow">
                     <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
                         <h2 class="text-2xl font-bold text-midnight leading-tight">RAJANAGARAM VENTURE</h2>
-                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">SUNCITY</span>
+                        <span
+                            class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">SUNCITY</span>
                     </div>
                     <p class="text-emerald-600 font-bold text-sm mb-4">RUDA APPROVED</p>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">A thoughtfully planned large-scale project
+                    <p class="text-slate-600 text-sm mb-2 leading-relaxed">A thoughtfully planned large-scale project
                         designed for modern living and long-term value. Premium residential plots with all luxury
                         amenities.</p>
+
+                    <!-- Independent View More Highlights -->
+                    <div class="mb-6">
+                        <button onclick="toggleHighlights(this)" class="view-more-btn">
+                            VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="highlights-content mt-3">
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Gsl medical College and hospital - 3km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Giet - 6km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Lenora dental college - 2kms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Adikavi nannaya University - 5.5Km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Royal convention hall - 1km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Highway NH16 - 50 METERS</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> BUS STAND Police station, panchaytd all under 1km to our suncity rajanagaram site</div>
+                        </div>
+                    </div>
 
                     <div
                         class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
@@ -210,13 +236,28 @@
                 <div class="p-8 flex-grow">
                     <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
                         <h2 class="text-2xl font-bold text-midnight leading-tight">MADHURAPUDI VENTURE</h2>
-                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">AEROCITY</span>
+                        <span
+                            class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">AEROCITY</span>
                     </div>
                     <p class="text-emerald-600 font-bold text-sm mb-4 uppercase tracking-wider">Opp. Airport,
                         Rajahmundry</p>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Experience living close to the sky.
+                    <p class="text-slate-600 text-sm mb-2 leading-relaxed">Experience living close to the sky.
                         Madhurapudi Venture (Aerocity) offers a lifestyle of prestige and convenience, perfectly
                         situated near the heart of transportation hubs.</p>
+
+                    <!-- Independent View More Highlights -->
+                    <div class="mb-6">
+                        <button onclick="toggleHighlights(this)" class="view-more-btn">
+                            VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="highlights-content mt-3">
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Rajahmundry - Bhadrachalam highway - 100 MTRS</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Rajahmundry Airport - 500 MTRS</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Laurel Global High School - 2.5Kms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Kesava medical emergency - 4kms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Sasi engineering collage - 2 kms</div>
+                        </div>
+                    </div>
 
                     <div
                         class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
@@ -285,11 +326,27 @@
                 <div class="p-8 flex-grow">
                     <div class="flex flex-col sm:flex-row justify-between items-start mb-4 gap-2">
                         <h2 class="text-2xl font-bold text-midnight leading-tight">MORAMPUDI VENTURE</h2>
-                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">GREEN CITY</span>
+                        <span class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded shrink-0">GREEN
+                            CITY</span>
                     </div>
                     <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">RUDA Approved Development</p>
-                    <p class="text-slate-600 text-sm mb-6 leading-relaxed">Sprawling 9-12 Acre Development designed for
+                    <p class="text-slate-600 text-sm mb-2 leading-relaxed">Sprawling 9-12 Acre Development designed for
                         peace, privacy, and future-forward urban living. Experience nature in the city.</p>
+
+                    <!-- Independent View More Highlights -->
+                    <div class="mb-6">
+                        <button onclick="toggleHighlights(this)" class="view-more-btn">
+                            VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="highlights-content mt-3">
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Morampudi main junction - 3.5kms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Trips international school - 1.5kms</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Aditya Thaksh school - 1km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Delta emergency hospital - 5km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> ONGC base complex - 5km</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> RTC complex - 5km</div>
+                        </div>
+                    </div>
 
                     <div
                         class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
@@ -370,9 +427,20 @@
                             AVENUES</span>
                     </div>
                     <p class="text-emerald-600 font-bold text-sm mb-4 uppercase">DTCP APPROVED</p>
-                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">Our newest venture at Gokavaram. A project
+                    <p class="text-slate-600 text-sm mb-2 leading-relaxed">Our newest venture at Gokavaram. A project
                         defined by modern infrastructure and high-quality construction standards. Bank loan facilities
                         available.</p>
+
+                    <!-- Independent View More Highlights -->
+                    <div class="mb-6">
+                        <button onclick="toggleHighlights(this)" class="view-more-btn">
+                            VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="highlights-content mt-3">
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Near to National Highway</div>
+                            <div class="highlight-item"><i class="fa-solid fa-circle-check"></i> Located in the Mandal head quarters</div>
+                        </div>
+                    </div>
 
                     <div
                         class="grid grid-cols-2 gap-y-3 mb-8 text-xs text-slate-500 font-semibold border-t border-slate-50 pt-4">
@@ -453,7 +521,16 @@
                             class="bg-slate-100 text-[10px] font-bold text-slate-500 px-2 py-1 rounded text-center">GODAVARI
                             TOWNSHIP</span>
                     </div>
-                    <p class="text-emerald-600 font-bold text-sm mb-2">PHASE-I, II, III (RUDA APPROVED)</p>
+                    <p class="text-emerald-600 font-bold text-sm mb-4">PHASE-I, II, III (RUDA APPROVED)</p>
+
+                    <!-- Achievement Highlight -->
+                    <div class="bg-gold/10 border-l-4 border-gold p-4 mb-6 rounded-r-2xl">
+                        <p class="text-midnight text-xs font-bold leading-relaxed">
+                            <i class="fa-solid fa-medal mr-2 text-gold"></i>
+                            It is one of our recently completed 100+ acre project among 25+ successful ventures of ours.
+                        </p>
+                    </div>
+
                     <p class="text-slate-600 text-sm mb-6 leading-relaxed">A sprawling 100-Acre premium development.
                         This landmark project set the standard for modern living in Rajahmundry with complete
                         infrastructure and long-term value.</p>
@@ -596,7 +673,8 @@
                     <ul class="space-y-6">
                         <li class="flex items-start">
                             <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold"></i>
-                            <span>3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP 533101</span>
+                            <span>3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP
+                                533101</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-phone mr-4 text-gold"></i>
@@ -612,7 +690,9 @@
             </div>
 
             <div class="border-t border-white/5 pt-10 text-center text-sm">
-                <p>&copy; 2026 NVB Developers. All rights reserved. Designed for Quality & Trust. Developed by <a href="https://www.codtechitsolutions.com/" target="_blank" class="text-gold hover:underline">CODTECH IT SOLUTIONS</a></p>
+                <p>&copy; 2026 NVB Developers. All rights reserved. Designed for Quality & Trust. Developed by <a
+                        href="https://www.codtechitsolutions.com/" target="_blank"
+                        class="text-gold hover:underline">CODTECH IT SOLUTIONS</a></p>
             </div>
         </div>
     </footer>
@@ -695,6 +775,39 @@
         closeMenu.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
         });
+
+        // Property Highlights Toggle (Accordion Style)
+        function toggleHighlights(btn) {
+            const currentContent = btn.nextElementSibling;
+            const isExpanding = !currentContent.classList.contains('expanded');
+            
+            // Close other expanded highlights
+            if (isExpanding) {
+                document.querySelectorAll('.highlights-content.expanded').forEach(content => {
+                    if (content !== currentContent) {
+                        content.classList.remove('expanded');
+                        const otherBtn = content.previousElementSibling;
+                        if (otherBtn && otherBtn.classList.contains('view-more-btn')) {
+                            otherBtn.innerHTML = `VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                            otherBtn.querySelector('i').style.transform = 'rotate(0deg)';
+                            otherBtn.classList.remove('active');
+                        }
+                    }
+                });
+            }
+
+            // Toggle current
+            currentContent.classList.toggle('expanded');
+            btn.classList.toggle('active');
+            
+            if (currentContent.classList.contains('expanded')) {
+                btn.innerHTML = `VIEW LESS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                btn.querySelector('i').style.transform = 'rotate(180deg)';
+            } else {
+                btn.innerHTML = `VIEW HIGHLIGHTS <i class="fa-solid fa-chevron-down ml-2"></i>`;
+                btn.querySelector('i').style.transform = 'rotate(0deg)';
+            }
+        }
 
         // Close menu on link click
         mobileMenu.querySelectorAll('a').forEach(link => {
