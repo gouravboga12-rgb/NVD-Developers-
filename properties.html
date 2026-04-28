@@ -228,10 +228,16 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <a href="docs/airport_brochure.pdf" download
-                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
-                            <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
-                        </a>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="openModal('mp-plan')"
+                                class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN
+                            </button>
+                            <a href="docs/airport_brochure.pdf" download
+                                class="bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-file-pdf mr-2"></i> BROCHURE
+                            </a>
+                        </div>
                         <a href="https://www.google.com/maps?q=17.094167,81.827306" target="_blank"
                             class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center">
                             <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
@@ -295,10 +301,16 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <a href="docs/morampudi_brochure.pdf" download
-                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
-                            <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
-                        </a>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="openModal('ms-plan')"
+                                class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN
+                            </button>
+                            <a href="docs/morampudi_brochure.pdf" download
+                                class="bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-file-pdf mr-2"></i> BROCHURE
+                            </a>
+                        </div>
                         <a href="https://www.google.com/maps?q=16.991444,81.840972" target="_blank"
                             class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center">
                             <i class="fa-solid fa-location-dot mr-2"></i> VIEW ON GOOGLE MAPS
@@ -372,8 +384,18 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="openModal('gv-plan-1')"
+                                class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN 1
+                            </button>
+                            <button onclick="openModal('gv-plan-2')"
+                                class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN 2
+                            </button>
+                        </div>
                         <a href="docs/gokavaram_brochure.pdf" download
-                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center">
+                            class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
                             <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
                         </a>
                         <a href="https://maps.app.goo.gl/rPwfJrXNJz5zmyQ79" target="_blank"
@@ -458,7 +480,7 @@
 
     <!-- Modals Section -->
 
-    <!-- 1. Rajanagaram Site Plan (Embed PDF) -->
+    <!-- Rajanagaram Site Plan (Embed PDF) -->
     <div id="rv-plan" class="modal">
         <span class="modal-close" onclick="closeModals()">&times;</span>
         <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
@@ -468,6 +490,58 @@
                     class="bg-gold text-[10px] px-3 py-1 rounded">DOWNLOAD PDF</a>
             </div>
             <iframe src="docs/RAJANAGARAM%20NEW%20%20PLAN%20(1).pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Madhurapudi Site Plan Modal -->
+    <div id="mp-plan" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>MADHURAPUDI VENTURE SITE PLAN</span>
+                <a href="docs/madhurupudiplan.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/madhurupudiplan.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Morampudi Site Plan Modal -->
+    <div id="ms-plan" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>MORAMPUDI VENTURE SITE PLAN</span>
+                <a href="docs/Morampudisiteplan.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/Morampudisiteplan.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Gokavaram Site Plan 1 Modal -->
+    <div id="gv-plan-1" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>GOKAVARAM VENTURE SITE PLAN 1</span>
+                <a href="docs/GOKAVARAM DTCP 1.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/GOKAVARAM DTCP 1.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Gokavaram Site Plan 2 Modal -->
+    <div id="gv-plan-2" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>GOKAVARAM VENTURE SITE PLAN 2</span>
+                <a href="docs/GOKAVARAM DTCP 2.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/GOKAVARAM DTCP 2.pdf" class="w-full h-full border-none"></iframe>
         </div>
     </div>
 

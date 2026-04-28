@@ -279,9 +279,11 @@ h1, h2, h3, .font-serif {
     .py-24 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
     
     .container { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
-    
-    /* Ensure fixed header doesn't cover top content on mobile */
-    .header-spacer { padding-top: 72px !important; }
+}
+
+/* Ensure fixed header doesn't cover top content */
+.header-spacer { 
+    padding-top: calc(72px + 0.1cm) !important; 
 }
 
 /* Stricter overflow prevention for mobile */

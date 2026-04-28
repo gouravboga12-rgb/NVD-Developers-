@@ -188,11 +188,11 @@
                 <div class="p-12 lg:w-1/2 flex flex-col justify-center bg-midnight text-white">
                     <h2 class="text-4xl font-bold mb-10">Our Office</h2>
                     <div class="space-y-10">
-                        <div class="flex items-start">
-                            <i class="fa-solid fa-location-dot text-gold text-3xl mr-6 mt-1"></i>
-                            <div>
+                        <div class="flex items-start group">
+                            <i class="fa-solid fa-location-dot text-gold text-3xl mr-6 mt-1 group-hover:scale-110 transition-transform"></i>
+                            <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="hover:text-gold transition-all">
                                 <p class="text-slate-400 leading-relaxed text-lg italic">NVB Developers, 3rd floor, Health Hospital, Seethampet, Rajamahendravaram,<br>Andhra Pradesh 533101</p>
-                            </div>
+                            </a>
                         </div>
                         <div class="flex items-start">
                             <i class="fa-solid fa-clock text-gold text-3xl mr-6 mt-1"></i>
@@ -210,13 +210,16 @@
                 </div>
 
                 <!-- Google Maps Placeholder -->
-                <div class="lg:w-1/2 h-[350px] lg:h-auto lg:min-h-[500px] relative bg-slate-100">
+                <div class="lg:w-1/2 h-[350px] lg:h-auto lg:min-h-[500px] relative bg-slate-100 group">
+                    <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="absolute inset-0 z-20 block cursor-pointer">
+                        <span class="sr-only">View on Google Maps</span>
+                    </a>
                     <iframe 
                         src="https://www.google.com/maps?q=NVB+Developers,+3rd+floor,+health+hospital,+NVB+office,+opposite+Rajahmundry,+Seethampet,+Rajamahendravaram,+Andhra+Pradesh+533101&output=embed" 
                         class="w-full h-full border-none absolute inset-0" 
                         loading="lazy">
                     </iframe>
-                    <div class="absolute inset-0 bg-midnight/10 pointer-events-none"></div>
+                    <div class="absolute inset-0 bg-midnight/10 pointer-events-none group-hover:bg-transparent transition-all z-10"></div>
                 </div>
             </div>
         </div>
@@ -266,9 +269,11 @@
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6 pl-10 sm:pl-0">Contact Us</h4>
                     <ul class="space-y-6">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold"></i>
-                            <span>3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP 533101</span>
+                        <li class="flex items-start group">
+                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold group-hover:scale-110 transition-transform"></i>
+                            <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="hover:text-gold transition-all text-sm">
+                                3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP 533101
+                            </a>
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-phone mr-4 text-gold"></i>

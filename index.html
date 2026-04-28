@@ -147,9 +147,9 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative" data-aos="fade-right">
                     <div
-                        class="relative z-10 aspect-[4/5] md:aspect-[3/4] rounded-3xl overflow-hidden border-[12px] border-slate-50 shadow-2xl">
-                        <img src="assets/images/founder.png" alt="Nallamilli Venkanna Babu"
-                            class="w-full h-full object-cover">
+                        class="relative z-10 rounded-3xl overflow-hidden border-[12px] border-slate-50 shadow-2xl">
+                        <img src="assets/images/founder_new.png" alt="Nallamilli Venkanna Babu"
+                            class="w-full h-auto hover:scale-105 transition-transform duration-500">
                     </div>
                     <!-- Decorative Elements -->
                     <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 rounded-full blur-3xl -z-10"></div>
@@ -558,10 +558,16 @@
                             <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
                         </div>
                         <div class="flex flex-col gap-3">
-                            <a href="docs/airport_brochure.pdf" download
-                                class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
-                                <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
-                            </a>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button onclick="openModal('mp-plan')"
+                                    class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN
+                                </button>
+                                <a href="docs/airport_brochure.pdf" download
+                                    class="bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-file-pdf mr-2"></i> BROCHURE
+                                </a>
+                            </div>
                             <a href="https://www.google.com/maps?q=17.094167,81.827306" target="_blank"
                                 class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
                                 <i class="fa-solid fa-location-dot mr-2 text-gold"></i> VIEW ON GOOGLE MAPS
@@ -626,10 +632,16 @@
                             <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
                         </div>
                         <div class="flex flex-col gap-3">
-                            <a href="docs/morampudi_brochure.pdf" download
-                                class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
-                                <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
-                            </a>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button onclick="openModal('ms-plan')"
+                                    class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN
+                                </button>
+                                <a href="docs/morampudi_brochure.pdf" download
+                                    class="bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-file-pdf mr-2"></i> BROCHURE
+                                </a>
+                            </div>
                             <a href="https://www.google.com/maps?q=16.991444,81.840972" target="_blank"
                                 class="w-full bg-midnight text-white py-3 rounded-xl font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
                                 <i class="fa-solid fa-location-dot mr-2 text-gold"></i> VIEW ON GOOGLE MAPS
@@ -700,6 +712,16 @@
                             <span><i class="fa-solid fa-tree mr-2 text-gold"></i> GREEN PARK</span>
                         </div>
                         <div class="flex flex-col gap-3">
+                            <div class="grid grid-cols-2 gap-3">
+                                <button onclick="openModal('gv-plan-1')"
+                                    class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN 1
+                                </button>
+                                <button onclick="openModal('gv-plan-2')"
+                                    class="bg-midnight text-white font-bold py-3 rounded-xl hover:bg-gold transition-all shadow-md flex items-center justify-center text-xs">
+                                    <i class="fa-solid fa-map mr-2 text-gold"></i> SITE PLAN 2
+                                </button>
+                            </div>
                             <a href="docs/gokavaram_brochure.pdf" download
                                 class="w-full bg-gold text-white font-bold py-3 rounded-xl hover:bg-gold-dark transition-all shadow-md flex items-center justify-center text-xs">
                                 <i class="fa-solid fa-file-pdf mr-2"></i> DOWNLOAD BROCHURE
@@ -870,15 +892,20 @@
                 <div class="p-12 lg:w-1/2 bg-midnight text-white">
                     <h2 class="text-3xl font-bold mb-8">Visit Our Office</h2>
                     <ul class="space-y-8">
+                        <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="hover:text-gold transition-all">
                             <p class="text-slate-300 text-lg">NVB Developers, 3rd floor, health hospital, Seethampet, Rajamahendravaram, Andhra Pradesh 533101
                             </p>
+                        </a>
                         <li class="flex items-start">
                             <i class="fa-solid fa-clock text-gold text-2xl mr-6 mt-1"></i>
                             <p class="text-slate-300">Mon - Sat: 9:00 AM - 7:00 PM</p>
                         </li>
                     </ul>
                 </div>
-                <div class="lg:w-1/2 h-[350px] lg:h-auto lg:min-h-[400px]">
+                <div class="lg:w-1/2 h-[350px] lg:h-auto lg:min-h-[400px] relative group">
+                    <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="absolute inset-0 z-10 block cursor-pointer">
+                        <span class="sr-only">View on Google Maps</span>
+                    </a>
                     <iframe src="https://www.google.com/maps?q=NVB+Developers,+3rd+floor,+health+hospital,+NVB+office,+opposite+Rajahmundry,+Seethampet,+Rajamahendravaram,+Andhra+Pradesh+533101&output=embed"
                         class="w-full h-full border-none" loading="lazy"></iframe>
                 </div>
@@ -1035,9 +1062,11 @@
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6 pl-10 sm:pl-0">Contact Us</h4>
                     <ul class="space-y-6">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold"></i>
-                            <span>3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP 533101</span>
+                        <li class="flex items-start group">
+                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-gold group-hover:scale-110 transition-transform"></i>
+                            <a href="https://maps.app.goo.gl/UHfDodUa5nWL1imQ7?g_st=aw" target="_blank" class="hover:text-gold transition-all">
+                                3rd floor, health hospital, NVB office, Seethampet, Rajamahendravaram, AP 533101
+                            </a>
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-phone mr-4 text-gold"></i>
@@ -1074,6 +1103,58 @@
                     class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
             </div>
             <iframe src="docs/RAJANAGARAM NEW  PLAN (1).pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Madhurapudi Site Plan Modal -->
+    <div id="mp-plan" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>MADHURAPUDI VENTURE SITE PLAN</span>
+                <a href="docs/madhurupudiplan.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/madhurupudiplan.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Morampudi Site Plan Modal -->
+    <div id="ms-plan" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>MORAMPUDI VENTURE SITE PLAN</span>
+                <a href="docs/Morampudisiteplan.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/Morampudisiteplan.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Gokavaram Site Plan 1 Modal -->
+    <div id="gv-plan-1" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>GOKAVARAM VENTURE SITE PLAN 1</span>
+                <a href="docs/GOKAVARAM DTCP 1.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/GOKAVARAM DTCP 1.pdf" class="w-full h-full border-none"></iframe>
+        </div>
+    </div>
+
+    <!-- Gokavaram Site Plan 2 Modal -->
+    <div id="gv-plan-2" class="modal">
+        <span class="modal-close" onclick="closeModals()">&times;</span>
+        <div class="modal-content relative bg-white h-[90vh] max-w-5xl">
+            <div class="p-4 bg-midnight text-white font-bold flex justify-between items-center">
+                <span>GOKAVARAM VENTURE SITE PLAN 2</span>
+                <a href="docs/GOKAVARAM DTCP 2.pdf" download
+                    class="bg-gold text-[10px] px-3 py-1 rounded uppercase">DOWNLOAD PDF</a>
+            </div>
+            <iframe src="docs/GOKAVARAM DTCP 2.pdf" class="w-full h-full border-none"></iframe>
         </div>
     </div>
 
