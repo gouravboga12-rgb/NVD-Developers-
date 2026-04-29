@@ -15,6 +15,23 @@
 
 <body class="bg-slate-50">
 
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement-bar">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span><i class="fas fa-shield-check"></i> OFFICIAL WEBSITE MAINTAINED BY MD OFFICE</span>
+                <span><i class="fas fa-crown"></i> NVB VENTURES DEVELOPERS - QUALITY & TRUST</span>
+                <span><i class="fas fa-map-marker-alt"></i> NEW VENTURES OPEN FOR BOOKING</span>
+                <span><i class="fas fa-phone-alt"></i> CONTACT US FOR DIRECT SITE VISITS</span>
+                <!-- Repeat for seamless loop -->
+                <span><i class="fas fa-shield-check"></i> OFFICIAL WEBSITE MAINTAINED BY MD OFFICE</span>
+                <span><i class="fas fa-crown"></i> NVB VENTURES DEVELOPERS - QUALITY & TRUST</span>
+                <span><i class="fas fa-map-marker-alt"></i> NEW VENTURES OPEN FOR BOOKING</span>
+                <span><i class="fas fa-phone-alt"></i> CONTACT US FOR DIRECT SITE VISITS</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Sticky Navbar -->
     <nav class="fixed top-0 left-0 w-full z-50 glass nav-shadow py-2">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
@@ -22,8 +39,11 @@
             <a href="index.html" class="flex items-center space-x-3">
                 <img src="assets/images/nvb logo.jpg.jpeg" alt="NVB Developers Logo" class="h-14 w-auto rounded">
                 <div class="flex flex-col">
-                    <span class="text-xl font-bold text-midnight leading-none">NVB DEVELOPERS</span>
-                    <span class="text-[10px] tracking-widest text-gold font-semibold">QUALITY & TRUST</span>
+                    <div class="flex items-center">
+                        <span class="text-xl font-bold text-midnight leading-none">NVB DEVELOPERS</span>
+                        <i class="fas fa-check-circle text-gold ml-1.5 text-sm" title="Official Verified Website"></i>
+                    </div>
+                    <span class="text-[10px] tracking-widest text-gold font-semibold uppercase">Official Portal</span>
                 </div>
             </a>
 
@@ -70,7 +90,7 @@
     </div>
 
     <!-- Page Header -->
-    <section class="bg-midnight py-20 text-white relative header-spacer" style="padding-top: calc(72px + 0.5cm) !important;">
+    <section class="bg-midnight py-20 text-white relative header-spacer" style="padding-top: calc(108px + 0.5cm) !important;">
         <div class="container mx-auto px-4 md:px-8 relative z-10">
             <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">About NVB Developers</h1>
             <p class="text-gold font-bold tracking-widest uppercase text-sm" data-aos="fade-up" data-aos-delay="100">Our
@@ -172,6 +192,101 @@
             </div>
         </div>
     </section>
+
+    <!-- Leadership Discussion CTA -->
+    <section class="py-12 bg-slate-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="bg-midnight rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl" data-aos="fade-up">
+                <!-- Decoration -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-gold/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-gold/5 rounded-full blur-2xl"></div>
+                
+                <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Require Strategic Guidance?</h2>
+                        <p class="text-slate-400 text-lg max-w-xl">For clients who require management attention or strategic investment advice directly from our leadership team.</p>
+                    </div>
+                    <button onclick="openModal('leadershipModal')" class="bg-gold text-white px-10 py-5 rounded-2xl font-bold hover:bg-white hover:text-midnight transition-all shadow-xl shadow-gold/20 flex items-center gap-3">
+                        <i class="fa-solid fa-user-tie text-xl"></i> REQUEST LEADERSHIP DISCUSSION
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Discussion Modal -->
+    <div id="leadershipModal" class="modal">
+        <div class="modal-content max-w-2xl bg-white rounded-[2.5rem] overflow-hidden">
+            <div class="bg-midnight p-8 text-white relative">
+                <button onclick="closeModals()" class="absolute top-6 right-6 text-2xl text-slate-400 hover:text-gold transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h3 class="text-3xl font-bold mb-2">Leadership Discussion Request</h3>
+                <p class="text-slate-400 text-sm">Strategic guidance for our premium clients.</p>
+            </div>
+            
+            <div class="p-8 md:p-12 overflow-y-auto max-h-[70vh]">
+                <div class="bg-gold/5 border-l-4 border-gold p-6 rounded-r-2xl mb-8">
+                    <p class="text-midnight text-sm leading-relaxed">
+                        <i class="fa-solid fa-circle-info text-gold mr-2"></i>
+                        This request is intended for clients who require strategic guidance or management attention. Our team will review and connect with you if appropriate.
+                    </p>
+                </div>
+                
+                <form id="leadershipForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Full Name</label>
+                            <input type="text" id="ld-name" required placeholder="John Doe" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Phone Number</label>
+                            <input type="tel" id="ld-phone" required placeholder="+91 00000 00000" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Email Address</label>
+                        <input type="email" id="ld-email" required placeholder="john@example.com" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Service Type</label>
+                            <select id="ld-service" required class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50 appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="Premium Plot Sales">Premium Plot Sales</option>
+                                <option value="Independent House Construction">Independent House Construction</option>
+                                <option value="Luxury Villas Construction">Luxury Villas Construction</option>
+                                <option value="Investment Advisory">Investment Advisory</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Purpose</label>
+                            <select id="ld-purpose" required class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50 appearance-none cursor-pointer">
+                                <option value="" disabled selected>Select Purpose</option>
+                                <option value="Guidance before decision">Guidance before decision</option>
+                                <option value="Final discussion before closing">Final discussion before closing</option>
+                                <option value="Escalation">Escalation</option>
+                                <option value="Business proposal">Business proposal</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Brief Requirement</label>
+                        <textarea id="ld-message" rows="4" placeholder="Tell us about your requirement..." class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-gold outline-none transition-all bg-slate-50 resize-none"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-midnight text-white font-bold py-5 rounded-xl hover:bg-gold transition-all shadow-xl flex items-center justify-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> SUBMIT REQUEST
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Vision & Mission -->
     <section class="py-20 bg-slate-50">
@@ -322,7 +437,10 @@
                 </div>
             </div>
 
-            <div class="border-t border-white/5 pt-10 text-center text-sm">
+            <div class="footer-official-note">
+                <i class="fas fa-shield-check mr-3"></i> This official portal is directly maintained and monitored by the Managing Director's Office, NVB Ventures Developers.
+            </div>
+            <div class="border-t border-white/5 pt-10 text-center text-sm mt-8">
                 <p>&copy; 2026 NVB Developers. All rights reserved. Designed for Quality & Trust. Developed by <a href="https://www.codtechitsolutions.com/" target="_blank" class="text-gold hover:underline">CODTECH IT SOLUTIONS</a></p>
             </div>
         </div>
@@ -357,6 +475,53 @@
                 mobileMenu.classList.remove('active');
             });
         });
+
+        // Modal Logic
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModals() {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.classList.remove('active');
+            });
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on click outside content
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                closeModals();
+            }
+        }
+
+        // Leadership Form Submission
+        const leadershipForm = document.getElementById('leadershipForm');
+        if (leadershipForm) {
+            leadershipForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('ld-name').value;
+                const phone = document.getElementById('ld-phone').value;
+                const email = document.getElementById('ld-email').value;
+                const service = document.getElementById('ld-service').value;
+                const purpose = document.getElementById('ld-purpose').value;
+                const message = document.getElementById('ld-message').value;
+                
+                const waMessage = `*Leadership Discussion Request*%0A%0A` +
+                                 `*Full Name:* ${encodeURIComponent(name)}%0A` +
+                                 `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                                 `*Email:* ${encodeURIComponent(email)}%0A` +
+                                 `*Service Type:* ${encodeURIComponent(service)}%0A` +
+                                 `*Purpose:* ${encodeURIComponent(purpose)}%0A` +
+                                 `*Message:* ${encodeURIComponent(message)}`;
+                
+                window.open(`https://wa.me/917998655655?text=${waMessage}`, '_blank');
+                closeModals();
+            });
+        }
     </script>
 </body>
 
