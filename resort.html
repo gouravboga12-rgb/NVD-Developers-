@@ -183,7 +183,7 @@
                 <div class="swiper-wrapper">
                     <!-- Resort Video as first item -->
                     <div class="swiper-slide relative">
-                        <video autoplay muted loop playsinline controls
+                        <video autoplay muted loop playsinline webkit-playsinline preload="auto" controls
                             class="w-full aspect-video object-cover rounded-3xl resort-gallery-video">
                             <source src="assets/videos/res.mp4" type="video/mp4">
                         </video>
@@ -382,21 +382,29 @@
                 768: { slidesPerView: 1.5 }
             },
             on: {
-                slideChange: function () {
-                    const videos = document.querySelectorAll('.resort-gallery-video');
-                    videos.forEach(v => {
-                        v.pause();
-                        v.currentTime = 0;
-                    });
-
-                    // Auto play the video if it's in the active slide
+                init: function() {
+                    // Start video if first slide is video
                     const activeSlide = this.slides[this.activeIndex];
                     const activeVideo = activeSlide.querySelector('.resort-gallery-video');
                     if (activeVideo) {
-                        activeVideo.muted = false; // Ensure sound is on
-                        activeVideo.play().catch(e => {
-                            console.log("Autoplay with sound requires user interaction first.");
-                            // If blocked, try playing muted as fallback
+                        activeVideo.play().catch(e => console.log("Initial autoplay prevented"));
+                    }
+                },
+                slideChange: function () {
+                    // Pause all videos
+                    const allVideos = document.querySelectorAll('.resort-gallery-video');
+                    allVideos.forEach(v => {
+                        v.pause();
+                    });
+
+                    // Play video in the current active slide
+                    const activeSlide = this.slides[this.activeIndex];
+                    const activeVideo = activeSlide.querySelector('.resort-gallery-video');
+                    if (activeVideo) {
+                        activeVideo.currentTime = 0;
+                        // Try to play with sound first, fallback to muted if blocked
+                        activeVideo.muted = false;
+                        activeVideo.play().catch(() => {
                             activeVideo.muted = true;
                             activeVideo.play();
                         });
