@@ -289,7 +289,7 @@ h1, h2, h3, .font-serif {
 
 /* Ensure fixed header doesn't cover top content */
 .header-spacer { 
-    padding-top: calc(104px + 0.1cm) !important; 
+    padding-top: calc(104px + 0.4cm) !important; 
 }
 
 /* Announcement Bar Styles */
@@ -357,7 +357,7 @@ nav.fixed {
         top: 30px !important;
     }
     .header-spacer {
-        padding-top: calc(92px + 0.1cm) !important;
+        padding-top: calc(120px + 0.4cm) !important;
     }
 }
 
